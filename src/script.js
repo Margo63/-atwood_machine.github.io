@@ -222,7 +222,7 @@ function move() {
   let wheelMoveCoefficient = 0;
   if (added_mass === 0.0014) {
     // 1
-    wheelMoveCoefficient = 5.5 * 17;
+    wheelMoveCoefficient = 9.2 * 17;
   } else if (added_mass === 0.0028) {
     // 2
     wheelMoveCoefficient = 3.89 * 17;
@@ -286,7 +286,7 @@ function move() {
       timer.update(); // после преодоления фотосенсора, таймер на экране остановится. Но "внутри" мы его можем обновлять с помощью timer.update()
       wheel.style.transform =
           "rotate(" +
-          wheelMoveCoefficient * acceleration * timer.curr_time() +
+          wheelMoveCoefficient * acceleration * timer.curr_time()*currentThreadRight/1000 +
           "deg)"; // двигаем колесо с помощью transform
 
       thread_right.style.height = currentThreadRight + "px"; //нить "правая" и "левая"
