@@ -222,34 +222,34 @@ function move() {
   let wheelMoveCoefficient = 0;
   if (added_mass === 0.0014) {
     // 1
-    wheelMoveCoefficient = 9.2 * 17;
+    wheelMoveCoefficient = 9.1 * 17;
   } else if (added_mass === 0.0028) {
     // 2
-    wheelMoveCoefficient = 3.89 * 17;
+    wheelMoveCoefficient = 6.5 * 17;
   } else if (added_mass === 0.0021) {
     // 3
-    wheelMoveCoefficient = 4.5 * 17;
+    wheelMoveCoefficient = 7.5 * 17;
   } else if (added_mass === 0.0043) {
     // 4
-    wheelMoveCoefficient = 3.15 * 17;
+    wheelMoveCoefficient = 5.11 * 17;
   } else if (Math.abs(added_mass - 0.0042) <= 0.0001) {
     // 1+2
-    wheelMoveCoefficient = 3.12 * 17;
+    wheelMoveCoefficient = 5.17 * 17;
   } else if (Math.abs(added_mass - 0.0035) <= 0.0001) {
     // 1+3
-    wheelMoveCoefficient = 3.38 * 17;
+    wheelMoveCoefficient = 5.63 * 17;
   } else if (Math.abs(added_mass - 0.0057) <= 0.0001) {
     // 1+4
-    wheelMoveCoefficient = 2.7 * 17;
+    wheelMoveCoefficient = 4.5 * 17;
   } else if (Math.abs(added_mass - 0.0049) <= 0.0001) {
     // 2+3
-    wheelMoveCoefficient = 2.85 * 17;
+    wheelMoveCoefficient = 4.79 * 17;
   } else if (Math.abs(added_mass - 0.0071) <= 0.0001) {
     // 2+4
-    wheelMoveCoefficient = 2.4 * 17;
+    wheelMoveCoefficient = 4.0 * 17;
   } else if (Math.abs(added_mass - 0.0064) <= 0.0001) {
     // 3+4
-    wheelMoveCoefficient = 2.5 * 17;
+    wheelMoveCoefficient = 4.23 * 17;
   }
 
   console.log(added_mass);
